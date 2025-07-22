@@ -9,7 +9,7 @@ public class User {
     private String address;
     private String phone ;
 
-
+    /*  constructor here is private because i need him to make instanace from bulider only    */
     private User(Builder builder){
         id ++;
         this.name = builder.name;
@@ -57,7 +57,7 @@ public class User {
         private String address;
         private String phone ;
 
-
+     /*  setters here return bulider to allow chaning to make bulid for constr */
         public Builder setType(String type) {
             this.type = type;
             return this ;
